@@ -1,0 +1,47 @@
+
+{% extends "NombreApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+
+<div style="float:righ">
+
+  <p style ="color:white">hola </p>
+
+<div/>
+
+  <div class="row">
+
+    {% for Producto in productos_list %}
+
+
+    <div class="col">
+ 
+        <div class="card" style="width: 40%;">
+
+        <img src="{{Producto.imagen.url}}" class =>
+        <div class="card-body">
+        <h7 class="card-title">{{Producto.nombre_producto}}</h7>
+      
+        <h7 class="card-title">{{Producto.precio_producto}}</h7>
+        </div>
+
+    <div class ="card-footer text-center">
+
+      <a href"#" class="btn btn-sucess">Agregar al carro </a>
+
+    </div>
+
+    </div>
+   
+ 
+  <div/>
+
+  </div>
+
+   {% endfor %}
+ 
+{% endblock %}
