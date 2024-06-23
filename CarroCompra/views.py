@@ -28,7 +28,7 @@ def eliminar_producto(request, producto_id):
 
     return redirect("tienda")
 
-def restar_producto(request, producto_id):
+def restar_producto(request, producto_id): #pablo
 
     carro = Carro(request)
 
@@ -39,7 +39,7 @@ def restar_producto(request, producto_id):
     return redirect("tienda")
 
 
-def limpiar_carro(request, producto_id):
+def limpiar_carro(request, producto_id): 
 
     carro = Carro(request)
 
